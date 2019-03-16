@@ -1,0 +1,1 @@
+# nowae-stripboard-module
