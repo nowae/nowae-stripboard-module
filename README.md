@@ -1,1 +1,1 @@
-# nowae-stripboard-module
+# stripboard-module
