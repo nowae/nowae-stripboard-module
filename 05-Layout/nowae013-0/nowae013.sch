@@ -1,4 +1,756 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 29 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "DIOs Voltage Translator"
+Date "2019-03-16"
+Rev "0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "revision_date"
+$EndDescr
+$Comp
+L nowae-logic:TXB0108RGYR U1
+U 1 1 5C8D642C
+P 5650 4100
+F 0 "U1" H 5650 4750 50  0000 C CNN
+F 1 "TXB0108RGYR" H 5650 3450 50  0000 C CNN
+F 2 "QFN:VQFN20_3.5x4.5_0.5_20+1" H 5650 2550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0108.pdf" H 5650 3350 50  0001 C CNN
+F 4 "Texas Instruments" H 5650 3250 50  0001 C CNN "Manufacturer"
+F 5 "TXB0108RGYR" H 5650 3150 50  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 5650 3050 50  0001 C CNN "Distributor"
+F 7 "1702549" H 5650 2950 50  0001 C CNN "Distributor Code"
+F 8 "1.22" H 5650 2850 50  0001 C CNN "Price €"
+F 9 "Rs Components S.r.l." H 5650 2750 50  0001 C CNN "Distributor2"
+F 10 "709-8782" H 5650 2650 50  0001 C CNN "Distributor2 Code"
+	1    5650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5C8D6303
+P 6200 4700
+F 0 "#PWR09" H 6200 4700 30  0001 C CNN
+F 1 "GND" H 6200 4700 30  0001 C CNN
+F 2 "" H 6200 4700 60  0000 C CNN
+F 3 "" H 6200 4700 60  0000 C CNN
+	1    6200 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4550 6100 4550
+$Comp
+L nowae-resistor:RESISTOR R1
+U 1 1 5C8D63F5
+P 5100 4900
+F 0 "R1" V 5180 4900 50  0000 C CNN
+F 1 "10k" V 5100 4900 50  0000 C CNN
+F 2 "CAPACITOR:CAPACITOR-0603" V 5030 4900 30  0001 C CNN
+F 3 "" H 5100 4900 30  0001 C CNN
+F 4 "-" H 5100 4550 60  0001 C CNN "Manufacturer"
+F 5 "-" H 5100 4450 60  0001 C CNN "Part Number"
+F 6 "-" H 5100 4350 60  0001 C CNN "Distributor"
+F 7 "-" H 5100 4250 60  0001 C CNN "Distributor Code"
+F 8 "-" H 5100 4150 60  0001 C CNN "Price €"
+F 9 "-" H 5100 4050 60  0001 C CNN "Distributor2"
+F 10 "-" H 5100 3950 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 5100 3850 60  0001 C CNN "Distributor3"
+F 12 "-" H 5100 3750 60  0001 C CNN "Distributor3 Code"
+	1    5100 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4650 5100 4550
+Wire Wire Line
+	5100 4550 5200 4550
+$Comp
+L power:+3.3V #PWR07
+U 1 1 5C8D6521
+P 5100 5250
+F 0 "#PWR07" H 5100 5175 30  0001 C CNN
+F 1 "+3.3V" H 5100 5360 30  0000 C CNN
+F 2 "" H 5100 5250 60  0000 C CNN
+F 3 "" H 5100 5250 60  0000 C CNN
+	1    5100 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 5250 5100 5150
+$Comp
+L power:GND #PWR08
+U 1 1 5C8D6578
+P 5650 3300
+F 0 "#PWR08" H 5650 3300 30  0001 C CNN
+F 1 "GND" H 5650 3300 30  0001 C CNN
+F 2 "" H 5650 3300 60  0000 C CNN
+F 3 "" H 5650 3300 60  0000 C CNN
+	1    5650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae-capacitor:CAPACITOR C2
+U 1 1 5C8D6696
+P 5350 3200
+F 0 "C2" H 5350 3300 50  0000 L CNN
+F 1 "100n" H 5356 3115 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-0603" H 5388 3050 30  0001 C CNN
+F 3 "https://katalog.we-online.com/pbs/datasheet/885012206020.pdf" H 5350 3300 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 5350 2850 60  0001 C CNN "Manufacturer"
+F 5 "885012206020" H 5350 2750 60  0001 C CNN "Part Number"
+F 6 "-" H 5350 2650 60  0001 C CNN "Distributor"
+F 7 "-" H 5350 2550 60  0001 C CNN "Distributor Code"
+F 8 "-" H 5350 2450 60  0001 C CNN "Price €"
+F 9 "-" H 5350 2350 60  0001 C CNN "Distributor2"
+F 10 "-" H 5350 2250 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 5350 2150 60  0001 C CNN "Distributor3"
+F 12 "-" H 5350 2050 60  0001 C CNN "Distributor3 Code"
+	1    5350 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L nowae-capacitor:CAPACITOR C3
+U 1 1 5C8D6422
+P 5950 3200
+F 0 "C3" H 5950 3300 50  0000 L CNN
+F 1 "100n" H 5956 3115 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-0603" H 5988 3050 30  0001 C CNN
+F 3 "https://katalog.we-online.com/pbs/datasheet/885012206020.pdf" H 5950 3300 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 5950 2850 60  0001 C CNN "Manufacturer"
+F 5 "885012206020" H 5950 2750 60  0001 C CNN "Part Number"
+F 6 "-" H 5950 2650 60  0001 C CNN "Distributor"
+F 7 "-" H 5950 2550 60  0001 C CNN "Distributor Code"
+F 8 "-" H 5950 2450 60  0001 C CNN "Price €"
+F 9 "-" H 5950 2350 60  0001 C CNN "Distributor2"
+F 10 "-" H 5950 2250 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 5950 2150 60  0001 C CNN "Distributor3"
+F 12 "-" H 5950 2050 60  0001 C CNN "Distributor3 Code"
+	1    5950 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3650 5050 3650
+Wire Wire Line
+	5050 3650 5050 3200
+Wire Wire Line
+	5050 3200 5150 3200
+Wire Wire Line
+	5550 3200 5650 3200
+Wire Wire Line
+	5650 3300 5650 3200
+Connection ~ 5650 3200
+Wire Wire Line
+	5650 3200 5750 3200
+Wire Wire Line
+	6100 3650 6250 3650
+Wire Wire Line
+	6250 3650 6250 3200
+Wire Wire Line
+	6250 3200 6150 3200
+$Comp
+L power:+3.3V #PWR06
+U 1 1 5C8D73BC
+P 5050 3100
+F 0 "#PWR06" H 5050 3025 30  0001 C CNN
+F 1 "+3.3V" H 5050 3210 30  0000 C CNN
+F 2 "" H 5050 3100 60  0000 C CNN
+F 3 "" H 5050 3100 60  0000 C CNN
+	1    5050 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3100 5050 3200
+Connection ~ 5050 3200
+$Comp
+L power:+5V #PWR010
+U 1 1 5C8D7CF8
+P 6250 3100
+F 0 "#PWR010" H 6250 3025 30  0001 C CNN
+F 1 "+5V" H 6250 3210 40  0000 C CNN
+F 2 "" H 6250 3100 60  0000 C CNN
+F 3 "" H 6250 3100 60  0000 C CNN
+	1    6250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3100 6250 3200
+Connection ~ 6250 3200
+$Comp
+L nowae-resistor:CAT16-330J8LF RP2
+U 1 1 5C8D84F0
+P 4750 4100
+F 0 "RP2" H 4750 4550 50  0000 C CNN
+F 1 "33R" H 4750 3600 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-CAT16-X8" H 4750 2900 50  0001 C CNN
+F 3 "http://www.bourns.com/docs/product-datasheets/cat10.pdf" H 4750 3300 50  0001 C CNN
+F 4 "Bourns" H 4750 3500 60  0001 C CNN "Manufacturer"
+F 5 "CAT16-330J8LF" H 4750 3400 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 4800 3200 60  0001 C CNN "Distributor"
+F 7 "2908152" H 4750 3100 60  0001 C CNN "Distributor Code"
+F 8 "0.349" H 4750 3000 60  0001 C CNN "Price €"
+	1    4750 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae-resistor:CAT16-330J8LF RP3
+U 1 1 5C8DA388
+P 6550 4100
+F 0 "RP3" H 6550 4550 50  0000 C CNN
+F 1 "33R" H 6550 3600 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-CAT16-X8" H 6550 2900 50  0001 C CNN
+F 3 "http://www.bourns.com/docs/product-datasheets/cat10.pdf" H 6550 3300 50  0001 C CNN
+F 4 "Bourns" H 6550 3500 60  0001 C CNN "Manufacturer"
+F 5 "CAT16-330J8LF" H 6550 3400 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 6600 3200 60  0001 C CNN "Distributor"
+F 7 "2908152" H 6550 3100 60  0001 C CNN "Distributor Code"
+F 8 "0.349" H 6550 3000 60  0001 C CNN "Price €"
+	1    6550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3750 6350 3750
+Wire Wire Line
+	6100 3850 6350 3850
+Wire Wire Line
+	6100 3950 6350 3950
+Wire Wire Line
+	6100 4050 6350 4050
+Wire Wire Line
+	6100 4150 6350 4150
+Wire Wire Line
+	6100 4250 6350 4250
+Wire Wire Line
+	6100 4350 6350 4350
+Wire Wire Line
+	5200 4450 4950 4450
+Wire Wire Line
+	5200 4350 4950 4350
+Wire Wire Line
+	5200 4250 4950 4250
+Wire Wire Line
+	5200 4150 4950 4150
+Wire Wire Line
+	5200 4050 4950 4050
+Wire Wire Line
+	5200 3950 4950 3950
+Wire Wire Line
+	4950 3850 5200 3850
+Wire Wire Line
+	5200 3750 4950 3750
+$Comp
+L nowae-connector:CONN_12X1 P1
+U 1 1 5C8E12A0
+P 3250 4100
+F 0 "P1" H 3250 4750 60  0000 C CNN
+F 1 "12x1" H 3250 3450 60  0000 C CNN
+F 2 "CONNECTOR:STRIP_12x1_2.54-WE-61301211121" H 3625 4100 60  0001 C CNN
+F 3 "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf" H 3625 4100 60  0001 C CNN
+F 4 "-" H 3250 3750 60  0001 C CNN "Manufacturer"
+F 5 "-" H 3250 3650 60  0001 C CNN "Part Number"
+F 6 "-" H 3250 3550 60  0001 C CNN "Distributor"
+F 7 "-" H 3250 3450 60  0001 C CNN "Distributor Code"
+F 8 "-" H 3250 3350 60  0001 C CNN "Price €"
+F 9 "-" H 3250 3250 60  0001 C CNN "Distributor2"
+F 10 "-" H 3250 3150 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 3250 3050 60  0001 C CNN "Distributor3"
+F 12 "-" H 3250 2950 60  0001 C CNN "Distributor3 Code"
+	1    3250 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4700 6200 4550
+Wire Wire Line
+	6100 4450 6350 4450
+Wire Wire Line
+	6750 3750 6850 3750
+Wire Wire Line
+	6750 3850 6950 3850
+Wire Wire Line
+	6750 3950 7050 3950
+Wire Wire Line
+	6750 4050 7150 4050
+Wire Wire Line
+	6750 4150 7250 4150
+Wire Wire Line
+	6750 4250 7350 4250
+Wire Wire Line
+	6750 4350 7450 4350
+$Comp
+L nowae-connector:CONN_12X1 P2
+U 1 1 5C8EB75A
+P 8050 4100
+F 0 "P2" H 8050 4750 60  0000 C CNN
+F 1 "12x1" H 8050 3450 60  0000 C CNN
+F 2 "CONNECTOR:STRIP_12x1_2.54-WE-61301211121" H 8425 4100 60  0001 C CNN
+F 3 "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf" H 8425 4100 60  0001 C CNN
+F 4 "-" H 8050 3750 60  0001 C CNN "Manufacturer"
+F 5 "-" H 8050 3650 60  0001 C CNN "Part Number"
+F 6 "-" H 8050 3550 60  0001 C CNN "Distributor"
+F 7 "-" H 8050 3450 60  0001 C CNN "Distributor Code"
+F 8 "-" H 8050 3350 60  0001 C CNN "Price €"
+F 9 "-" H 8050 3250 60  0001 C CNN "Distributor2"
+F 10 "-" H 8050 3150 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 8050 3050 60  0001 C CNN "Distributor3"
+F 12 "-" H 8050 2950 60  0001 C CNN "Distributor3 Code"
+	1    8050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5C8ECC62
+P 7700 4700
+F 0 "#PWR015" H 7700 4700 30  0001 C CNN
+F 1 "GND" H 7700 4700 30  0001 C CNN
+F 2 "" H 7700 4700 60  0000 C CNN
+F 3 "" H 7700 4700 60  0000 C CNN
+	1    7700 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4700 7700 4650
+Wire Wire Line
+	7700 4550 7800 4550
+Wire Wire Line
+	7800 4650 7700 4650
+Connection ~ 7700 4650
+Wire Wire Line
+	7700 4650 7700 4550
+$Comp
+L power:GND #PWR02
+U 1 1 5C8EF1A2
+P 3600 4700
+F 0 "#PWR02" H 3600 4700 30  0001 C CNN
+F 1 "GND" H 3600 4700 30  0001 C CNN
+F 2 "" H 3600 4700 60  0000 C CNN
+F 3 "" H 3600 4700 60  0000 C CNN
+	1    3600 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4700 3600 4650
+Wire Wire Line
+	3600 4550 3500 4550
+Wire Wire Line
+	3500 4650 3600 4650
+Connection ~ 3600 4650
+Wire Wire Line
+	3600 4650 3600 4550
+Wire Wire Line
+	3500 3650 3600 3650
+Wire Wire Line
+	3600 3650 3600 3550
+Wire Wire Line
+	3600 3550 3500 3550
+Wire Wire Line
+	7800 3650 7700 3650
+Wire Wire Line
+	7700 3650 7700 3550
+Wire Wire Line
+	7700 3550 7800 3550
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5C8F5F0A
+P 3600 3350
+F 0 "#PWR01" H 3600 3275 30  0001 C CNN
+F 1 "+3.3V" H 3600 3460 30  0000 C CNN
+F 2 "" H 3600 3350 60  0000 C CNN
+F 3 "" H 3600 3350 60  0000 C CNN
+	1    3600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR014
+U 1 1 5C8F6312
+P 7700 3400
+F 0 "#PWR014" H 7700 3325 30  0001 C CNN
+F 1 "+5V" H 7700 3510 40  0000 C CNN
+F 2 "" H 7700 3400 60  0000 C CNN
+F 3 "" H 7700 3400 60  0000 C CNN
+	1    7700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae-capacitor:CAPACITOR C1
+U 1 1 5C8F66FD
+P 3850 3450
+F 0 "C1" H 3850 3550 50  0000 L CNN
+F 1 "1u" H 3856 3365 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-0603" H 3888 3300 30  0001 C CNN
+F 3 "https://katalog.we-online.com/pbs/datasheet/885012206026.pdf" H 3850 3550 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 3850 3100 60  0001 C CNN "Manufacturer"
+F 5 "885012206026" H 3850 3000 60  0001 C CNN "Part Number"
+F 6 "-" H 3850 2900 60  0001 C CNN "Distributor"
+F 7 "-" H 3850 2800 60  0001 C CNN "Distributor Code"
+F 8 "-" H 3850 2700 60  0001 C CNN "Price €"
+F 9 "-" H 3850 2600 60  0001 C CNN "Distributor2"
+F 10 "-" H 3850 2500 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 3850 2400 60  0001 C CNN "Distributor3"
+F 12 "-" H 3850 2300 60  0001 C CNN "Distributor3 Code"
+	1    3850 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L nowae-capacitor:CAPACITOR C4
+U 1 1 5C8F89D8
+P 7450 3450
+F 0 "C4" H 7450 3550 50  0000 L CNN
+F 1 "1u" H 7456 3365 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-0603" H 7488 3300 30  0001 C CNN
+F 3 "https://katalog.we-online.com/pbs/datasheet/885012206026.pdf" H 7450 3550 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 7450 3100 60  0001 C CNN "Manufacturer"
+F 5 "885012206026" H 7450 3000 60  0001 C CNN "Part Number"
+F 6 "-" H 7450 2900 60  0001 C CNN "Distributor"
+F 7 "-" H 7450 2800 60  0001 C CNN "Distributor Code"
+F 8 "-" H 7450 2700 60  0001 C CNN "Price €"
+F 9 "-" H 7450 2600 60  0001 C CNN "Distributor2"
+F 10 "-" H 7450 2500 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 7450 2400 60  0001 C CNN "Distributor3"
+F 12 "-" H 7450 2300 60  0001 C CNN "Distributor3 Code"
+	1    7450 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3650 3450 3600 3450
+Wire Wire Line
+	3600 3450 3600 3350
+Wire Wire Line
+	3600 3550 3600 3450
+Connection ~ 3600 3550
+Connection ~ 3600 3450
+$Comp
+L power:GND #PWR012
+U 1 1 5C906836
+P 7150 3450
+F 0 "#PWR012" H 7150 3450 30  0001 C CNN
+F 1 "GND" H 7150 3450 30  0001 C CNN
+F 2 "" H 7150 3450 60  0000 C CNN
+F 3 "" H 7150 3450 60  0000 C CNN
+	1    7150 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 3450 7700 3450
+Wire Wire Line
+	7700 3450 7700 3400
+Wire Wire Line
+	7700 3450 7700 3550
+Connection ~ 7700 3450
+Connection ~ 7700 3550
+Wire Wire Line
+	4150 3450 4050 3450
+$Comp
+L power:GND #PWR04
+U 1 1 5C904C9B
+P 4150 3450
+F 0 "#PWR04" H 4150 3450 30  0001 C CNN
+F 1 "GND" H 4150 3450 30  0001 C CNN
+F 2 "" H 4150 3450 60  0000 C CNN
+F 3 "" H 4150 3450 60  0000 C CNN
+	1    4150 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L nowae-resistor:CAT16-330J8LF RP1
+U 1 1 5C91884E
+P 4100 4750
+F 0 "RP1" V 4054 5178 50  0000 L CNN
+F 1 "33R" V 4145 5178 50  0000 L CNN
+F 2 "RESISTOR:RESISTOR-CAT16-X8" H 4100 3550 50  0001 C CNN
+F 3 "http://www.bourns.com/docs/product-datasheets/cat10.pdf" H 4100 3950 50  0001 C CNN
+F 4 "Bourns" H 4100 4150 60  0001 C CNN "Manufacturer"
+F 5 "CAT16-330J8LF" H 4100 4050 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 4150 3850 60  0001 C CNN "Distributor"
+F 7 "2908152" H 4100 3750 60  0001 C CNN "Distributor Code"
+F 8 "0.349" H 4100 3650 60  0001 C CNN "Price €"
+	1    4100 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 4550 4450 4450
+Wire Wire Line
+	4450 4450 4550 4450
+Wire Wire Line
+	4350 4550 4350 4350
+Wire Wire Line
+	4350 4350 4550 4350
+Wire Wire Line
+	4250 4550 4250 4250
+Wire Wire Line
+	4250 4250 4550 4250
+Wire Wire Line
+	4150 4550 4150 4150
+Wire Wire Line
+	4150 4150 4550 4150
+Wire Wire Line
+	4050 4550 4050 4050
+Wire Wire Line
+	4050 4050 4550 4050
+Wire Wire Line
+	3950 4550 3950 3950
+Wire Wire Line
+	3950 3950 4550 3950
+Wire Wire Line
+	3850 4550 3850 3850
+Wire Wire Line
+	3850 3850 4550 3850
+Wire Wire Line
+	3750 4550 3750 3750
+Wire Wire Line
+	3750 3750 4550 3750
+Wire Wire Line
+	3500 3750 3750 3750
+Connection ~ 3750 3750
+Wire Wire Line
+	3500 3850 3850 3850
+Connection ~ 3850 3850
+Wire Wire Line
+	3500 3950 3950 3950
+Connection ~ 3950 3950
+Wire Wire Line
+	3500 4050 4050 4050
+Connection ~ 4050 4050
+Wire Wire Line
+	3500 4150 4150 4150
+Connection ~ 4150 4150
+Wire Wire Line
+	3500 4250 4250 4250
+Connection ~ 4250 4250
+Wire Wire Line
+	3500 4350 4350 4350
+Connection ~ 4350 4350
+Wire Wire Line
+	3500 4450 4450 4450
+Connection ~ 4450 4450
+Wire Wire Line
+	3750 4950 3750 5050
+Wire Wire Line
+	3750 5050 3850 5050
+Wire Wire Line
+	4450 4950 4450 5050
+Wire Wire Line
+	4350 4950 4350 5050
+Connection ~ 4350 5050
+Wire Wire Line
+	4350 5050 4450 5050
+Wire Wire Line
+	4250 4950 4250 5050
+Connection ~ 4250 5050
+Wire Wire Line
+	4250 5050 4350 5050
+Wire Wire Line
+	4150 4950 4150 5050
+Connection ~ 4150 5050
+Wire Wire Line
+	4150 5050 4250 5050
+Wire Wire Line
+	4050 4950 4050 5050
+Connection ~ 4050 5050
+Wire Wire Line
+	4050 5050 4100 5050
+Wire Wire Line
+	3950 4950 3950 5050
+Connection ~ 3950 5050
+Wire Wire Line
+	3950 5050 4050 5050
+Wire Wire Line
+	3850 4950 3850 5050
+Connection ~ 3850 5050
+Wire Wire Line
+	3850 5050 3950 5050
+$Comp
+L power:GND #PWR05
+U 1 1 5C959E54
+P 4350 5350
+F 0 "#PWR05" H 4350 5350 30  0001 C CNN
+F 1 "GND" H 4350 5350 30  0001 C CNN
+F 2 "" H 4350 5350 60  0000 C CNN
+F 3 "" H 4350 5350 60  0000 C CNN
+	1    4350 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5150 4100 5050
+Connection ~ 4100 5050
+Wire Wire Line
+	4100 5050 4150 5050
+Wire Wire Line
+	4250 5250 4350 5250
+Wire Wire Line
+	4350 5250 4350 5350
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5C965D83
+P 3850 5350
+F 0 "#PWR03" H 3850 5275 30  0001 C CNN
+F 1 "+3.3V" H 3850 5460 30  0000 C CNN
+F 2 "" H 3850 5350 60  0000 C CNN
+F 3 "" H 3850 5350 60  0000 C CNN
+	1    3850 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 5350 3850 5250
+Wire Wire Line
+	3850 5250 3950 5250
+$Comp
+L nowae-resistor:CAT16-330J8LF RP4
+U 1 1 5C977BD5
+P 7200 4750
+F 0 "RP4" V 7154 4323 50  0000 R CNN
+F 1 "33R" V 7245 4323 50  0000 R CNN
+F 2 "RESISTOR:RESISTOR-CAT16-X8" H 7200 3550 50  0001 C CNN
+F 3 "http://www.bourns.com/docs/product-datasheets/cat10.pdf" H 7200 3950 50  0001 C CNN
+F 4 "Bourns" H 7200 4150 60  0001 C CNN "Manufacturer"
+F 5 "CAT16-330J8LF" H 7200 4050 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 7250 3850 60  0001 C CNN "Distributor"
+F 7 "2908152" H 7200 3750 60  0001 C CNN "Distributor Code"
+F 8 "0.349" H 7200 3650 60  0001 C CNN "Price €"
+	1    7200 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 4950 6850 5050
+Wire Wire Line
+	6850 5050 6950 5050
+Wire Wire Line
+	7550 4950 7550 5050
+Wire Wire Line
+	7450 4950 7450 5050
+Connection ~ 7450 5050
+Wire Wire Line
+	7450 5050 7550 5050
+Wire Wire Line
+	7350 4950 7350 5050
+Connection ~ 7350 5050
+Wire Wire Line
+	7350 5050 7450 5050
+Wire Wire Line
+	7250 4950 7250 5050
+Connection ~ 7250 5050
+Wire Wire Line
+	7250 5050 7350 5050
+Wire Wire Line
+	7150 4950 7150 5050
+Connection ~ 7150 5050
+Wire Wire Line
+	7150 5050 7200 5050
+Wire Wire Line
+	7050 4950 7050 5050
+Connection ~ 7050 5050
+Wire Wire Line
+	7050 5050 7150 5050
+Wire Wire Line
+	6950 4950 6950 5050
+Connection ~ 6950 5050
+Wire Wire Line
+	6950 5050 7050 5050
+$Comp
+L power:GND #PWR013
+U 1 1 5C977BF8
+P 7450 5350
+F 0 "#PWR013" H 7450 5350 30  0001 C CNN
+F 1 "GND" H 7450 5350 30  0001 C CNN
+F 2 "" H 7450 5350 60  0000 C CNN
+F 3 "" H 7450 5350 60  0000 C CNN
+	1    7450 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 5150 7200 5050
+Connection ~ 7200 5050
+Wire Wire Line
+	7200 5050 7250 5050
+Wire Wire Line
+	7350 5250 7450 5250
+Wire Wire Line
+	7450 5250 7450 5350
+Wire Wire Line
+	6950 5350 6950 5250
+Wire Wire Line
+	6950 5250 7050 5250
+Wire Wire Line
+	7150 3450 7250 3450
+Wire Wire Line
+	6750 4450 7550 4450
+Wire Wire Line
+	6850 4550 6850 3750
+Connection ~ 6850 3750
+Wire Wire Line
+	6850 3750 7800 3750
+Wire Wire Line
+	6950 4550 6950 3850
+Connection ~ 6950 3850
+Wire Wire Line
+	6950 3850 7800 3850
+Wire Wire Line
+	7050 4550 7050 3950
+Connection ~ 7050 3950
+Wire Wire Line
+	7050 3950 7800 3950
+Wire Wire Line
+	7150 4550 7150 4050
+Connection ~ 7150 4050
+Wire Wire Line
+	7150 4050 7800 4050
+Wire Wire Line
+	7250 4550 7250 4150
+Connection ~ 7250 4150
+Wire Wire Line
+	7250 4150 7800 4150
+Wire Wire Line
+	7350 4550 7350 4250
+Connection ~ 7350 4250
+Wire Wire Line
+	7350 4250 7800 4250
+Wire Wire Line
+	7450 4550 7450 4350
+Connection ~ 7450 4350
+Wire Wire Line
+	7450 4350 7800 4350
+Wire Wire Line
+	7550 4550 7550 4450
+Connection ~ 7550 4450
+Wire Wire Line
+	7550 4450 7800 4450
+$Comp
+L power:+5V #PWR011
+U 1 1 5CA97773
+P 6950 5350
+F 0 "#PWR011" H 6950 5275 30  0001 C CNN
+F 1 "+5V" H 6950 5460 40  0000 C CNN
+F 2 "" H 6950 5350 60  0000 C CNN
+F 3 "" H 6950 5350 60  0000 C CNN
+	1    6950 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L nowae-misc:JUMPER-3 J1
+U 1 1 5CA9E9B0
+P 4100 5250
+F 0 "J1" H 4100 5350 39  0000 C CNN
+F 1 "JUMPER-3" H 4100 5350 39  0001 C CNN
+F 2 "MISC:JUMPERSMD-3" H 4075 5250 60  0001 C CNN
+F 3 "" H 4075 5250 60  0001 C CNN
+	1    4100 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L nowae-misc:JUMPER-3 J2
+U 1 1 5CA9F3C4
+P 7200 5250
+F 0 "J2" H 7200 5350 39  0000 C CNN
+F 1 "JUMPER-3" H 7200 5350 39  0001 C CNN
+F 2 "MISC:JUMPERSMD-3" H 7175 5250 60  0001 C CNN
+F 3 "" H 7175 5250 60  0001 C CNN
+	1    7200 5250
+	-1   0    0    1   
+$EndComp
+Text Notes 8200 4300 1    50   ~ 0
++5V_SIDE
+Text Notes 3150 4300 1    50   ~ 0
++3V3_SIDE
 $EndSCHEMATC
