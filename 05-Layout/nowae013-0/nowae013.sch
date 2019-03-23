@@ -454,7 +454,7 @@ F 3 "" H 4150 3450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L nowae-resistor:CAT16-330J8LF RP1
+L nowae013-rescue:CAT16-330J8LF-nowae-resistor RP1
 U 1 1 5C91884E
 P 4100 4750
 F 0 "RP1" V 4054 5178 50  0000 L CNN
@@ -597,7 +597,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 5250 3950 5250
 $Comp
-L nowae-resistor:CAT16-330J8LF RP4
+L nowae013-rescue:CAT16-330J8LF-nowae-resistor RP4
 U 1 1 5C977BD5
 P 7200 4750
 F 0 "RP4" V 7154 4323 50  0000 R CNN
