@@ -453,22 +453,6 @@ F 3 "" H 4150 3450 60  0000 C CNN
 	1    4150 3450
 	0    -1   -1   0   
 $EndComp
-$Comp
-L nowae013-rescue:CAT16-330J8LF-nowae-resistor RP1
-U 1 1 5C91884E
-P 4100 4750
-F 0 "RP1" V 4054 5178 50  0000 L CNN
-F 1 "33R" V 4145 5178 50  0000 L CNN
-F 2 "RESISTOR:RESISTOR-CAT16-X8" H 4100 3550 50  0001 C CNN
-F 3 "http://www.bourns.com/docs/product-datasheets/cat10.pdf" H 4100 3950 50  0001 C CNN
-F 4 "Bourns" H 4100 4150 60  0001 C CNN "Manufacturer"
-F 5 "CAT16-330J8LF" H 4100 4050 60  0001 C CNN "Part Number"
-F 6 "Farnell Italia S.r.l." H 4150 3850 60  0001 C CNN "Distributor"
-F 7 "2908152" H 4100 3750 60  0001 C CNN "Distributor Code"
-F 8 "0.349" H 4100 3650 60  0001 C CNN "Price €"
-	1    4100 4750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4450 4550 4450 4450
 Wire Wire Line
@@ -597,7 +581,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 5250 3950 5250
 $Comp
-L nowae013-rescue:CAT16-330J8LF-nowae-resistor RP4
+L nowae-resistor:CAT16-330J8LF RP4
 U 1 1 5C977BD5
 P 7200 4750
 F 0 "RP4" V 7154 4323 50  0000 R CNN
@@ -753,4 +737,20 @@ Text Notes 8200 4300 1    50   ~ 0
 +5V_SIDE
 Text Notes 3150 4300 1    50   ~ 0
 +3V3_SIDE
+$Comp
+L nowae-resistor:CAT16-330J8LF RP1
+U 1 1 5C91884E
+P 4100 4750
+F 0 "RP1" V 4054 5178 50  0000 L CNN
+F 1 "33R" V 4145 5178 50  0000 L CNN
+F 2 "RESISTOR:RESISTOR-CAT16-X8" H 4100 3550 50  0001 C CNN
+F 3 "http://www.bourns.com/docs/product-datasheets/cat10.pdf" H 4100 3950 50  0001 C CNN
+F 4 "Bourns" H 4100 4150 60  0001 C CNN "Manufacturer"
+F 5 "CAT16-330J8LF" H 4100 4050 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 4150 3850 60  0001 C CNN "Distributor"
+F 7 "2908152" H 4100 3750 60  0001 C CNN "Distributor Code"
+F 8 "0.349" H 4100 3650 60  0001 C CNN "Price €"
+	1    4100 4750
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
